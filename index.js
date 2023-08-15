@@ -5,9 +5,6 @@ const app = express();
 /* const path = require("path"); */
 const router = express.Router();
 
-const websocket = require("websocket");
-const client = new websocket.client();
-
 const db = require("./firebase_admin");
 
 const ref = db.ref("example");
